@@ -40,7 +40,7 @@
         packages = rec {
           default = lorry;
           lorry = rustPlatform.buildRustPackage {
-            name = "lorry2";
+            name = "lorry";
             src = lorrySrc;
 
             cargoLock = {
@@ -57,7 +57,6 @@
             nativeBuildInputs = with pkgs; [
               git
               openssl
-              sqlx-cli
               pkg-config
             ];
 

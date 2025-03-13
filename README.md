@@ -12,7 +12,7 @@ Example usage of a `nixosSystem` with lorry installed
 {
   inputs={
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    lorry.url = "github:ipsavitsy/lorry-nix";
+    lorry.url = "github:ipsavitsky/lorry-nix";
   };
   
   outputs = let

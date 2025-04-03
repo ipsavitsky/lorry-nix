@@ -24,16 +24,16 @@
         };
 
         rustPlatform = pkgs.makeRustPlatform {
-          cargo = pkgs.rust-bin.stable."1.85.0".minimal;
-          rustc = pkgs.rust-bin.stable."1.85.0".minimal;
+          cargo = pkgs.rust-bin.stable."1.84.1".minimal;
+          rustc = pkgs.rust-bin.stable."1.84.1".minimal;
         };
 
         lorrySrc = pkgs.fetchFromGitLab {
           group = "CodethinkLabs";
           owner = "lorry";
           repo = "lorry2";
-          rev = "v2.2.1";
-          sha256 = "sha256-mt290H9xh6KocJJNkV6gzVYNbgqr/zCPlIG9dB77yfU=";
+          rev = "v2.3.0";
+          sha256 = "sha256-hLdVuxGmCA08hhYe5V2PING1j0L4b5IQELZFH+fCOc8=";
         };
       in
       {

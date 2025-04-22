@@ -32,8 +32,8 @@
           group = "CodethinkLabs";
           owner = "lorry";
           repo = "lorry2";
-          rev = "v2.3.0";
-          sha256 = "sha256-hLdVuxGmCA08hhYe5V2PING1j0L4b5IQELZFH+fCOc8=";
+          rev = "v2.4.1";
+          sha256 = "sha256-HpuiOxbsDPLME1+rFexG6wjc2G0q1QgIZV23sW22SLU=";
         };
       in
       {

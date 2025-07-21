@@ -23,17 +23,19 @@
           overlays = [ (import rust-overlay) ];
         };
 
+        rustBin = pkgs.rust-bin.stable."1.88.0".minimal;
+
         rustPlatform = pkgs.makeRustPlatform {
-          cargo = pkgs.rust-bin.stable."1.87.0".minimal;
-          rustc = pkgs.rust-bin.stable."1.87.0".minimal;
+          cargo = rustBin;
+          rustc = rustBin;
         };
 
         lorrySrc = pkgs.fetchFromGitLab {
           group = "CodethinkLabs";
           owner = "lorry";
           repo = "lorry2";
-          rev = "v2.6.0";
-          sha256 = "sha256-Dofd9NDyo2U8K1HU1QEOvFSILAAF1y/Og14K4lj0hNg=";
+          rev = "v2.7.0";
+          sha256 = "sha256-zVSZt266VZQH3XncspUc783ShMRz/T/uTnH11Qvm8v0=";
         };
       in
       {
